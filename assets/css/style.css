@@ -14,6 +14,7 @@
     --blue-1: #C8E9F1;
     --blue-2: #528598;
     --blue-3: #C5D2D8;
+    --t16: clamp(0.94rem, calc(0.91rem + 0.12vw), 1rem);
 }
 @font-face {
     font-family: "Angst";
@@ -70,7 +71,7 @@
       local("NTSomic"),
       url("../fonts/NTSomic-Medium.ttf") format("truetype"),
       url("../fonts/NTSomic-Medium.woff2") format("woff2");
-      font-weight: 500;
+      font-weight: 600;
   }
   @font-face {
     font-family: "NTSomic";
@@ -90,24 +91,130 @@ html, body, html, ul, li, p{
     box-sizing: border-box;
 }
 body {
+  font-family: "NTSomic", sans-serif;
     font-size: clamp(1rem, calc(0.89rem + 0.46vw), 1.25rem);
 }
 ul, li {
     list-style: none;
-    font-size: clamp(0.94rem, calc(0.91rem + 0.12vw), 1rem);
+    font-size: var(--t16);
 }
 a{
-    display: block;
+    display: inline-block;
     color: inherit;
     text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+h1{
+  font-family: "Angst";
+    font-weight: 400;
+    font-size: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
+    line-height: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
+}
+h4{
+  font-family: "Angst";
+  font-size: clamp(1.5rem, calc(1.12rem + 1.62vw), 2.38rem);
+  line-height: 120%;
+  font-weight: 400;
+}
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main{
+  flex: 1 1 auto;
 }
 .container{
     max-width: 1260px;
     padding: 0 10px;
     margin: 0 auto;
+    height: 100%;
 }
-h1{
-    font-family: "NTSomic";
-    font-weight: 700;
-    font-size: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
+.signature{
+  font-size: var(--t16);
+}
+.header{
+  position: absolute;
+  height: 85px;
+  padding: 25px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__wrapper{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrapper nav{
+  margin-left: auto;
+  margin-right: clamp(3.38rem, calc(-3.22rem + 13.18vw), 7rem);
+}
+.header__wrapper nav ul{
+  display: flex;
+  gap: 23px;
+}
+.header__wrapper a{
+  font-family: "NTSomic";
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.header__wrapper a:hover{
+  opacity: 0.6;
+}
+
+.contact-btn{
+  position: relative;
+  padding-right: 42px;
+}
+.contact-btn::after{
+  position: absolute;
+  content: '';
+  background-image: url(../img/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 5px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ======================= HERO ================== */
+.hero{
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: var(--white);
+}
+.hero__wrapper{
+  padding-top: 120px;
+}
+.hero__wrapper .hero__subtitle{
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* =================== QUOTE ================ */
+.quote{
+  text-align: center;
+  padding: 70px 0;
+  background-color: var(--light-grey);
+}
+.quote .signature{
+  margin-top: 30px;
+}
+
+.footer{
+  height: 85px;
+  width: 100%;
+  background-color: var(--dark-grey);
 }
