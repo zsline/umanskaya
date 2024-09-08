@@ -1,0 +1,113 @@
+:root{
+    --black: #080808;
+    --grey-1: #B5BDC8; 
+    --grey-2: #C5D2D8; 
+    --dark-grey: #656565;
+    --light-grey: #F4F4F4;
+    --white: #fff;
+    --olive: #979967;
+    --olive-2: #D2D3B4;
+    --pink: #F0D3CA;
+    --yellow: #ECDEAD;
+    --yellow-2: #FFC148;
+    --yellow-3: #F8D849;
+    --blue-1: #C8E9F1;
+    --blue-2: #528598;
+    --blue-3: #C5D2D8;
+}
+@font-face {
+    font-family: "Angst";
+    src:
+      local("Angst"),
+      url("../fonts/Angst-Normal.otf") format("opentype"),
+      url("../fonts/Angst-Normal.woff") format("woff"),
+      url("../fonts/Angst-Normal.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+  }
+  @font-face {
+    font-family: "AngstSerif";
+    src:
+      local("AngstSerif"),
+      url("../fonts/Angst-NormalSerif.otf") format("opentype"),
+      url("../fonts/Angst-NormalSerif.woff") format("woff"),
+      url("../fonts/Angst-NormalSerif.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+  }
+  @font-face {
+    font-family: "Angst";
+    src:
+      local("Angst"),
+      url("../fonts/Angst-Bold.otf") format("opentype"),
+      url("../fonts/Angst-Bold.woff") format("woff"),
+      url("../fonts/Angst-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: bold;
+  }
+  @font-face {
+    font-family: "AngstSerif";
+    src:
+      local("AngstSerif"),
+      url("../fonts/Angst-BoldSerif.otf") format("opentype"),
+      url("../fonts/Angst-BoldSerif.woff") format("woff"),
+      url("../fonts/Angst-BoldSerif.woff2") format("woff2");
+      font-weight: 700;
+      font-style: bold;
+  }
+  @font-face {
+    font-family: "NTSomic";
+    src:
+      local("NTSomic"),
+      url("../fonts/NTSomic-Regular.ttf") format("truetype"),
+      url("../fonts/NTSomic-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+  }
+  @font-face {
+    font-family: "NTSomic";
+    src:
+      local("NTSomic"),
+      url("../fonts/NTSomic-Medium.ttf") format("truetype"),
+      url("../fonts/NTSomic-Medium.woff2") format("woff2");
+      font-weight: 500;
+  }
+  @font-face {
+    font-family: "NTSomic";
+    src:
+      local("NTSomic"),
+      url("../fonts/NTSomic-Bold.ttf") format("truetype"),
+      url("../fonts/NTSomic-Bold.woff2") format("woff2");
+      font-weight: 700;
+  }
+
+
+html, body, html, ul, li, p{
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: clamp(1rem, calc(0.89rem + 0.46vw), 1.25rem);
+}
+ul, li {
+    list-style: none;
+    font-size: clamp(0.94rem, calc(0.91rem + 0.12vw), 1rem);
+}
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    max-width: 1260px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+h1{
+    font-family: "NTSomic";
+    font-weight: 700;
+    font-size: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
+}
