@@ -121,6 +121,12 @@ h1{
     font-size: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
     line-height: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
 }
+@media (orientation: landscape) {
+  h1{
+    font-size: clamp(3.38rem, calc(-1.17rem + 9.26vw), 5.94rem);
+  }
+}
+
 h2{
   font-family: "Angst";
   font-weight: 400;
@@ -161,7 +167,7 @@ h5{
 .nav a{
   position: relative;
 }
-.nav a::after{
+.nav li a::after{
   position: absolute;
   content: '';
   width: 0;
@@ -223,8 +229,9 @@ h5{
   justify-content: space-between;
 }
 .header__wrapper nav{
+  display: flex;
   margin-left: auto;
-  margin-right: clamp(3.38rem, calc(-3.22rem + 13.18vw), 7rem);
+  gap: clamp(3.38rem, calc(-3.22rem + 13.18vw), 7rem);
 }
 .header__wrapper nav ul{
   display: flex;
@@ -260,20 +267,39 @@ h5{
 .contact-btn:hover svg{
   right: -5px;
 }
+@media (max-width:974px) {
+  .header__wrapper nav{
+    display: none;
+  }
+}
 
 /* ======================= HERO ================== */
 .hero{
 position: relative;
-height: 100vh;
+padding: clamp(4.5rem, calc(-1.26rem + 11.72vw), 12.5rem) 0;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 color: var(--white);
 overflow: hidden;
 }
+.hero picture{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero picture source, .hero picture img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .hero__linear{
 position: absolute;
-height: 100vw;
+height: 120%;
 width: 50%;
 left: 0;
 top: -50px;
@@ -281,9 +307,9 @@ background: linear-gradient(90deg, rgba(97,107,72,1) 0%, rgba(97,107,72,0.034051
 }
 .hero__wrapper{
   position: relative;
-  padding-top: 120px;
   z-index: 888;
 }
+
 .hero__wrapper .hero__subtitle{
   width: 50%;
   margin-top: 20px;
@@ -315,12 +341,13 @@ background: linear-gradient(90deg, rgba(97,107,72,1) 0%, rgba(97,107,72,0.034051
 .hero__counts--wrapper{
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: stretch;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 .hero__counts--item{
-  padding: 0 43px;
+  padding: 0 clamp(0.5rem, calc(-7.91rem + 13.78vw), 2.69rem);
   text-align: center;
 }
 .hero__counts--item:first-child{
@@ -335,7 +362,7 @@ background: linear-gradient(90deg, rgba(97,107,72,1) 0%, rgba(97,107,72,0.034051
   font-family: "Angst";
 }
 .hero__counts--number{
-  font-size: 48px;
+  font-size: clamp(1.63rem, calc(-0.81rem + 4.95vw), 3rem);
 }
 .hero__counts--text{
   font-size: 26px;
@@ -347,6 +374,45 @@ background: linear-gradient(90deg, rgba(97,107,72,1) 0%, rgba(97,107,72,0.034051
   text-transform: uppercase;
   color: var(--yellow);
   margin-bottom: 20px;
+}
+@media (max-width:878px) {
+  .hero{
+    padding: 80px 0 30px  ;
+  }
+  .hero__counts--wrapper{
+    flex-direction: column;
+  }
+  .hero__counts--item:first-child{
+    position: relative;
+    border-right: none;
+  }
+  .hero__counts--item:first-child::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 56px;
+    background-color: var(--white);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero__counts--item:last-child{
+    position: relative;
+    border-left: none;
+  }
+  .hero__counts--item:last-child::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 56px;
+    background-color: var(--white);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero__counts--item{
+    padding: 20px 0;
+  }
 }
 /* =================== QUOTE ================ */
 .quote{
