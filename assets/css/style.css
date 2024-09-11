@@ -96,6 +96,9 @@ html, body, html, ul, li, p{
     margin: 0;
     padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
