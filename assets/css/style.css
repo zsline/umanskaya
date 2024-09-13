@@ -663,13 +663,23 @@ h5 {
 }
 
 @media (max-width:567px) {
-  .hero .main-btn {
+
+  .hero .main-btn,
+  .coaching .main-btn,
+  .about-as .main-btn {
     width: 100%;
     text-align: center;
     padding: 14px;
   }
 
-  .hero .main-btn::after {
+  .about-us__link {
+    margin: 0;
+    width: 100% !important;
+  }
+
+  .hero .main-btn::after,
+  .coaching .main-btn::after,
+  .about-as .main-btn::after {
     display: none;
   }
 }
@@ -1118,6 +1128,11 @@ h5 {
   margin-left: 50%;
 }
 
+#site-main .about-us .about-us__link {
+  width: max-content;
+  margin: 0 auto !important;
+}
+
 .about-us__link--text {
   font-size: 16px;
   color: #497B64;
@@ -1520,6 +1535,60 @@ h5 {
   }
 }
 
+/* ==================== COACHING ================== */
+.coaching {
+  padding: clamp(3.13rem, calc(2.58rem + 2.34vw), 4.38rem) 0;
+}
+
+.coaching__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.coaching__wrapper .hero__cat {
+  max-width: 210px;
+}
+
+.coaching__title {
+  font-family: "Angst";
+  font-weight: 400;
+  font-size: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
+  line-height: clamp(3.38rem, calc(2.26rem + 4.74vw), 5.94rem);
+  transform: translateX(-6px);
+}
+
+.coaching__wrapper .hero__author--text {
+  margin: 30px 0 40px;
+}
+
+.coaching__wrapper .hero__cat {
+  color: var(--black);
+}
+
+.coaching__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 1px;
+  margin-top: 60px;
+}
+
+.coaching__card {
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 120px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.coaching__card img {
+  max-width: 87px;
+}
+
 /* ==================== FOOTER ==================== */
 
 .footer {
@@ -1665,6 +1734,22 @@ h5 {
 
   .hero-home__offer {
     margin-left: 0;
+  }
+
+  .coaching__wrapper {
+    flex-direction: column;
+  }
+
+  .coaching__cards {
+    display: block;
+  }
+
+  .coaching__card {
+    margin-bottom: 1px;
+  }
+
+  .coaching__card h5 {
+    max-width: 245px;
   }
 }
 
