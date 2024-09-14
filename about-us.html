@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Кто я?</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -40,25 +40,37 @@
                 </div>
             </div>
         </header>
-        <main id="site-main" class="main site-main">
-            <div class="hero hero-sample" style="background-color: var(--olive-2);">
+        <main class="main site-main">
+            <div class="site-main__title" style="background-color: var(--blue-1);">
+                <div class="container"></div>
+                <h1>кто я?</h1>
+            </div>
+            <div class="hero hero-sample" style="background-color: var(--blue-1);">
                 <div class="container">
-                    <div class="hero-sample__wrapper" style="background-image: url(); background-color: var(--olive);  background-blend-mode: screen">
-                        <div class="hero-sample__blur"></div>
+                    <div class="hero-sample__wrapper"
+                        style="background-image: url(assets/img/about-hero-sample.png); background-color: #93BAD7; background-blend-mode: screen">
                         <picture>
-                            <source srcset="assets/img/hero-sample.png" media="(orientation: portrait)">
-                            <source srcset="assets/img/hero-sample.png" media="(orientation: landscape)">
-                            <img src="assets/img/hero-sample.png" alt="" />
+                            <source srcset="assets/img/about-hero-sample-persone.png" media="(orientation: portrait)">
+                            <source srcset="assets/img/about-hero-sample-persone.png" media="(orientation: landscape)">
+                            <img src="assets/img/about-hero-sample-persone.png" alt="" />
                         </picture>
                         <div class="hero-sample__offer">
-                            <div class="hero-sample__main-title">Dr.</div>
+                            <div class="hero-sample__main-title">Меня зовут<br>Наталья УМанская,<br>я –
+                                сертифицированный коуч.</div>
                             <div class="hero-sample__title">
-                                <h1>Наталья<br>Уманская</h1>
+                                <h1></h1>
                             </div>
-                            <p>Коуч по отношениям, практик<br> и исследователь.</p>
+                            <div class="hero-sample__subtitle">Моя специализация — счастливые отношения:</div>
+                            <p></p>
+                            <div class="hero-sample__list white-list">
+                                <div class="format__info--dot">с партнерами и супругами</div>
+                                <div class="format__info--dot">с близкими</div>
+                                <div class="format__info--dot">с миром</div>
+                                <div class="format__info--dot">с собой</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero__counts">
+                    <!-- <div class="hero__counts">
                         <div class="hero__counts--wrapper">
                             <div class="hero__counts--item">
                                 <div class="hero__counts--title">
@@ -88,135 +100,63 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <h4>Здесь находятся ваши счастливые отношения<br>с собой, партнером, миром!</h4>
+                    </div> -->
+                    <h4>Мой путь до коучинга был извилистым и долгим –<br>так и должно было быть. Потому что весь
+                        мой<br>опыт помогает мне сейчас глубоко и<br>результативно работать с людьми</h4>
+                    <div class="hero__author--text">Итак, немного формальной биографии и регалий:</div>
                 </div>
             </div>
-
-
-            <div class="hero exit" style="background-color: #616B48;">
-                <picture>
-                    <source srcset="assets/img/hero-bg-mobil.jpg" media="(orientation: portrait)">
-                    <source srcset="assets/img/hero-bg.webp" media="(orientation: landscape)">
-                    <img src="assets/img/hero-bg.webp" alt="" />
-                </picture>
+            <div id="info" class="info info-sample" style="background-color: var(--light-grey);">
                 <div class="container">
-                    <div class="hero__wrapper">
-                        <div class="hero__cat">интенсив для выхода из лабиринта сложных, нересурсных, абьюзивных
-                            отношений</div>
-                        <h2>ЕСТЬ ВЫХОД!</h2>
-                        <p>Касается тех</p>
-                        <div class="exit__list white-list">
-                            <div class="format__info--dot">кому сложно, зашли в тупик партнерские личные отношения</div>
-                            <div class="format__info--dot">кто несчастлив в семье</div>
-                            <div class="format__info--dot">у кого нет понимания с детьми и родителями</div>
-                            <div class="format__info--dot">для кого начальство и коллеги – как дамоклов меч</div>
+                    <div class="info__wrapper">
+                        <div class="info__item" style="width: 23.8%;">
+                            <img src="assets/img/info-1.jpg" alt="">
+                            <h4></h4>
+                            <p>В 1991 году я окончила биологический факультет Ростовского Университета (РФ) и в 1995
+                                стала кандидатом биологических наук по специальности биохимия, тема диссертации —
+                                оксидативный стресс и другие клеточные механизмы старения.</p>
+                            <ul class="info__list">
+                            </ul>
                         </div>
-                        <p>Надоели конфликты, стресс и страдания?<br>
-                            Приходите на интенсив «ЕСТЬ ВЫХОД!». </p>
-                        <div class="hero__author--text">
-                            Подробности и цены по ссылке
+                        <div class="info__item" style="width: 40.6%;">
+                            <img src="assets/img/info-1.jpg" alt="">
+                            <h4></h4>
+                            <p>С 2001 года я живу и работаю в Саарланде (Германия). За спиной — более 10 лет успешного
+                                опыта научных исследований и подготовки аспирантов, (Клиника Университета Саарланд,
+                                Хомбург, Германия), 25 научных публикаций.</p>
+                            <p>Здесь же я стала:</p>
+                            <ul class="info__list">
+                                <li>Ментором и сертифицированным супервизором Канадской Академии MCP-коучинга М. Саидова
+                                </li>
+                                <li>Сертифицированным коучем ICF, Эриксоновский Университет</li>
+                            </ul>
                         </div>
-                        <a href="#" class="main-btn">ЗАПИСАТЬСЯ на интенсив</a>
+                        <div class="info__item" style="width: 32%;">
+                            <img src="assets/img/info-1.jpg" alt="">
+                            <h4></h4>
+                            <p>Кроме того: я — телесный энергопрактик. Освоила тета-хилинг, цветотерапию, акупунктуру,
+                                интуитивную анатомию. Все эти красивые слова не просто набор теорий и опыта,
+                                накопленного тысячелетиями, это практики, способные по крупицам восстановить человека с
+                                физиологической и психологической точек зрения.</p>
+                            <ul class="info__list">
+                            </ul>
+                        </div>
                     </div>
+                    <h4>Я горжусь своими навыками в твердых и мягких науках, разрабатываю собственные методики и не
+                        работаю по шаблонам, ведь каждый человек уникален, требует персонального подхода</h4>
                 </div>
             </div>
-
-            <div class="accent"
-                style="background-color: var(--pink); background-image: url(assets/img/IMG_0015\ 1.webp);">
+            <div class="past" style="background-image: url(assets/img/past-bg.png); background-color: #8C8C8C;" >
                 <div class="container">
-                    <div class="accent__wrapper">
-                        <h3>3 шага к счастливым<br> отношениям из изобилия</h3>
-                        <div class="hero__author--text">
-                            Вы приходите ко мне с запросом — подбираем индивидуальную программу или курс — вы получаете
-                            результат без постоянной зависимости от коуча.
-                        </div>
-                        <div class="accent__qoute">
-                            <p>Можно накормить человека один раз, дав ему рыбу, а можно научить его рыбачить, дав
-                                удочку.</p>
-                            <p>Я даю вам УДОЧКУ для налаживания главных отношений в вашей жизни. Будь-то личные,
-                                карьерные
-                                запросы или отношения с собой.</p>
-                            <div class="hero__author--text">Наталья Уманская</div>
-                        </div>
+                    <div class="hero__cat">
+                        Но так было не всегда.
+                    </div>
+                    <p>20 лет назад я умывалась слезами, сидя в съемной квартире без работы, почти без немецкого, оставшись с двумя детьми после третьего (!) развода. Ситуация вынудила разбираться, как же все-таки делать правильный выбор и строить эти самые гармоничные отношения?</p>
+                    <div class="hero__author--text">
+                        Книги, тренинги, тренировки, практики, обучение. Мне удалось ответить на свои вопросы и реализовать призвание — сделать коучинг своей настоящей профессией.
                     </div>
                 </div>
             </div>
-            <div class="coaching" style="background-color: var(--yellow);">
-                <div class="container">
-                    <div class="coaching__wrapper">
-                        <div class="coaching__left">
-                            <div class="hero__cat">КОУЧИНГ ПРОГРАММЫ ОТ УМАНСКОЙ</div>
-                            <div class="coaching__title">
-                                Как быть, если:
-                            </div>
-                        </div>
-                        <div class="coaching__right">
-                            <div class="coaching__right--list">
-                                <div class="format__info--dot">Кризис семьи или отношений, непонимание, дело идет к
-                                    расставанию
-                                </div>
-                                <div class="format__info--dot">Кажется, разрыв и разлад грядет со своим Я</div>
-                                <div class="format__info--dot">Абьюз, токсичные и созависимые отношения</div>
-                                <div class="format__info--dot">Вы уже отчаялись найти вторую половинку</div>
-                                <div class="format__info--dot">Нарушаются границы…</div>
-                            </div>
-                            <div class="hero__author--text">Ответы на 1000 и 1 вопрос об отношениях</div>
-                            <a href="#" class="main-btn">дизайнеру</a>
-                        </div>
-                    </div>
-                    <div class="coaching__cards">
-                        <div class="coaching__card" style="background-image: url(assets/img/cards/card-1.jpg);">
-                            <h5>Индивидуальное сопровождение</h5>
-                            <img src="assets/img/icons/card-arrow.svg" alt="">
-                        </div>
-                        <div class="coaching__card" style="background-image: url(assets/img/cards/card-2.jpg);">
-                            <h5>Групповые программы</h5>
-                            <img src="assets/img/icons/card-arrow.svg" alt="">
-                        </div>
-                        <div class="coaching__card" style="background-image: url(assets/img/cards/card-3.jpg);">
-                            <h5>Антикризисный коучинг - срочная помощь</h5>
-                            <img src="assets/img/icons/card-arrow.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="about-us" class="about-us about-num" style="background-color: var(--blue-3);">
-                <div class="container">
-                    <div class="about-us__wrapper">
-                        <div class="about-us__info">
-                            <div class="about-us__info--num">5</div>
-                            <h2>важнейших строк обо мне</h2>
-                            <p>В моей обойме: интуитивная анатомия, акупунктура, цветотерапия, наука биохимия, 8+ лет
-                                работы с
-                                мышлением и телом</p>
-                        </div>
-                        <div class="about-us__data">
-                            <div class="about-us__data--img">
-                                <img src="assets/img/home-about-us.jpg" alt="">
-                            </div>
-                            <div class="about-us__data--list">
-                                <ul>
-                                    <li>Ментор и супервизор Канадской Академии MCP-коучинга М. Саидова</li>
-                                    <li>Сертифицированный коуч ICF, Эриксоновский Университет</li>
-                                    <li>14 лет счастлива в новой семье после 3-х разводов</li>
-                                    <li>В 1995 защитила диссертацию по специальности биохимия</li>
-                                    <li>Специалист натуральной медицины, мастер-инструктор осознанной медитации</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-us__subtitle">
-                        <h4>Реализую ваше право на счастье,<br> используя психотерапевтические методы <br>вдолгую и
-                            коучинговую помощь <br>здесь и сейчас.
-                        </h4>
-                    </div>
-                    <div class="about-us__link">
-                        <a href="#" class="main-btn">подробнее</a>
-                    </div>
-                </div>
-            </div>
-
             <div id="cases" class="cases">
                 <div class="container">
                     <div class="cases__title block-title">
