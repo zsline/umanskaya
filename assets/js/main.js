@@ -17,3 +17,15 @@ if(document.querySelector('.cases__slider')){
         }
     });
 }
+if(document.querySelector('.wall-rewievs__slider')){
+    const swiper = new Swiper('.wall-rewievs__slider', {
+        loop: true,
+        pagination: {
+            el: '.wall-rewievs-pagination',
+        },
+        navigation: {
+            nextEl: '.wall-rewievs__next',
+            prevEl: '.wall-rewievs__prev',
+        }
+    });
+}
