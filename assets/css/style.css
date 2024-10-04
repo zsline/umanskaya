@@ -335,6 +335,13 @@ h5 {
     transform: translateX(100%);
     transition: all 0.3s;
     visibility: hidden;
+  /* ========= добавить ============= */
+
+    overflow-y: auto;
+    padding-bottom: 80px;
+    
+  /* ========= добавить ============= */
+
   }
 
   .nav.open {
@@ -2094,6 +2101,14 @@ h5 {
     margin-top: 40px;
     bottom: 0;
   }
+}
+@media(max-width:976px), (orientation: portrait){
+  .wall-hero{
+    padding-top: 114px;
+  }
+  .wall-hero.hero picture img {
+    object-position: bottom;
+}
 }
 @media(max-width:814px), (orientation: portrait) {
   .wall-info__title {
