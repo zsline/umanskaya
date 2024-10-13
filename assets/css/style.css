@@ -188,12 +188,15 @@ h2 {
   font-size: clamp(2.63rem, calc(-2.37rem + 7.41vw), 3.38rem);
   line-height: 100%;
 }
-
+/* ====================== добавить =================== */
 h3 {
   font-family: "Angst";
   font-weight: 400;
   font-size: clamp(1.63rem, calc(1.02rem + 2.57vw), 3rem);
 }
+/* ====================== добавить =================== */
+
+
 
 h4 {
   font-family: "Angst";
@@ -203,10 +206,10 @@ h4 {
 }
 
 h5 {
-  font-family: "Abel", sans-serif;
+  font-family: "Angst", sans-serif;
   font-size: clamp(1.13rem, calc(0.91rem + 0.9vw), 1.63rem);
   line-height: 100%;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -404,7 +407,6 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .header__wrapper nav {
@@ -964,7 +966,9 @@ h5 {
   height: 4px;
   border-radius: 50%;
   left: 0;
-  top: 12px;
+  /* ---------------------------------------------------------------- */
+  top: 8px;
+  /* ----------------------------------------------------------------- */
   background-color: var(--black);
 }
 
@@ -1576,6 +1580,7 @@ h5 {
 .exit .hero__author--text {
   margin: 20px 0 40px;
 }
+/* ====================== добавить =================== */
 
 /*===================== ACCENT ==================== */
 .accent {
@@ -1664,6 +1669,10 @@ h5 {
     padding-right: 0;
   }
 }
+/* ====================== добавить =================== */
+
+
+
 
 /* ==================== COACHING ================== */
 .coaching {
@@ -2179,5 +2188,73 @@ h5 {
     padding: 14px;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+/* ======================== ЛЕНДИНГ 3 ========================== */
+
+.compass-hero .hero__wrapper .hero__subtitle{
+  max-width: 630px;
+  width: 100%;
+}
+.compass-hero .hero__wrapper .main-btn{
+  margin-top: 34px;
+}
+.compass-hero picture img{
+  object-position: right;
+}
+.compass-info .wall-info__title{
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 47px;
+  margin-top: 0;
+}
+.compass-info .want__info--list ul{
+  columns: 1;
+}
+.compass-info .want__info--list ul li{
+  margin-bottom: 5px;
+  line-height: 130%;
+}
+.compass-info .t28{
+  text-indent: 106px;
+  line-height: 100%;
+}
+.compass-info .main-btn{
+  position: relative;
+  left: 50%;
+  margin-top: 28px;
+}
+@media (orientation: portrait) {
+  .compass-hero{
+    padding-top: 55px;
+    padding-bottom: 85%;
+  }
+  .compass-hero .hero__wrapper{
+    margin-top: 50px;
+  }
+  .compass-hero .hero__wrapper .main-btn{
+    margin-top: 34px;
+  }
+
+}
+@media (max-width: 814px), (orientation: portrait) {
+  .compass-info .wall-info__title {
+      display: block;
+  }
+  .compass-info .t28{
+    text-indent: 80px;
+    margin-top: 40px;
+  }
+  .compass-info .main-btn{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 567px) {
+  .compass-info .main-btn {
+      width: 100%;
+      text-align: center;
+      padding: 14px;
   }
 }
