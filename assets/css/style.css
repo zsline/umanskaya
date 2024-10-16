@@ -194,6 +194,7 @@ h3 {
   font-family: "Angst";
   font-weight: 400;
   font-size: clamp(1.63rem, calc(1.02rem + 2.57vw), 3rem);
+  line-height: normal;
 }
 
 /* ====================== добавить =================== */
@@ -2362,6 +2363,7 @@ h6 {
 
 .stay-hero .hero__wrapper {
   max-width: 60%;
+  margin-top: 70px;
 }
 
 .stay-hero .hero__wrapper--info {
@@ -2430,6 +2432,67 @@ h6 {
   gap: 20px;
   margin-bottom: 1px;
 }
+.stay-case__title{
+  max-width: 774px;
+  text-align: center;
+  margin: 0 auto;
+}
+.stay-info{
+  padding-bottom: 70px;
+}
+.stay-component__wrapper{
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  color: var(--white);
+}
+.stay-component__wrapper .t20{
+  max-width: 420px;
+}
+.stay-component__wrapper h4{
+  max-width: 715px;
+}
+.stay-info h2{
+  max-width: 502px;
+}
+.stay-info ul {
+  columns: 1;
+}
+.stay-info .want__info--list ul li{
+  margin-bottom: 5px;
+}
+.stay-info .want__info--list ul li::after{
+  top: 6px;
+}
+.stay-experience{
+  position: relative;
+}
+.stay-experience img{
+  position: absolute;
+  object-fit: contain;
+  height: 100%;
+  bottom: 0;
+  left: 10%;
+  max-width: 543px;
+}
+.stay-experience__wrapper{
+  max-width: 700px;
+  margin-left: 40%;
+}
+.stay-experience__wrapper .want__info--list ul{
+  columns: 1;
+  margin-top: 40px;
+}
+.stay-experience__wrapper .want__info--list ul li{
+  margin-bottom: 4px;
+}
+
+@media (min-width: 1921px){
+  .stay-experience img{
+    left: 50%;
+    transform: translateX(-670px);
+  }
+}
 @media (orientation: portrait) {
   .stay-hero {
     padding-bottom: 120%;
@@ -2441,14 +2504,58 @@ h6 {
     max-width: 100%;
     margin-bottom: 40px;
   }
+  .stay-component__wrapper{
+    display: block;
+  }
+  .stay-component__wrapper .t20{
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1120px) {
   .stay-hero .hero__wrapper--info {
     display: block;
   }
+  .stay-experience img{
+    left: 0px;
+    transform: translateX(0);
+  }
 }
-
+@media (max-width: 964px){
+  .stay-experience__wrapper{
+    margin-left: 50%;
+  }
+  .stay-experience img{
+    max-width: 400px;
+    object-position: bottom;
+  }
+}
+@media (max-width: 760px){
+  .stay-component__wrapper{
+    display: block;
+  }
+  .stay-component__wrapper .t20{
+    margin-bottom: 30px;
+  }
+  .stay-experience{
+    padding-bottom: 75%;
+  }
+  .stay-experience img{
+    max-width: 400px;
+    width: 100%;
+    object-position: bottom center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .stay-experience__wrapper{
+    margin-left: 0;
+  }
+}
+@media (max-width: 590px){
+  .stay-experience{
+    padding-bottom: 100%;
+  }
+}
 @media (max-width: 425px) {
   .stay-hero .hero__wrapper {
     max-width: 100%;
@@ -2471,5 +2578,8 @@ h6 {
   }.stay-skills__title img {
     left: 50%;
     transform: translateX(-50%);
+  }
+  .stay-experience{
+    padding-bottom: 120%;
   }
 }
