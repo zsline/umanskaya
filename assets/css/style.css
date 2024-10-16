@@ -188,12 +188,14 @@ h2 {
   font-size: clamp(2.63rem, calc(-2.37rem + 7.41vw), 3.38rem);
   line-height: 100%;
 }
+
 /* ====================== добавить =================== */
 h3 {
   font-family: "Angst";
   font-weight: 400;
   font-size: clamp(1.63rem, calc(1.02rem + 2.57vw), 3rem);
 }
+
 /* ====================== добавить =================== */
 
 
@@ -210,6 +212,15 @@ h5 {
   font-size: clamp(1.13rem, calc(0.91rem + 0.9vw), 1.63rem);
   line-height: 100%;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: "NTSomic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
   text-transform: uppercase;
 }
 
@@ -338,12 +349,12 @@ h5 {
     transform: translateX(100%);
     transition: all 0.3s;
     visibility: hidden;
-  /* ========= добавить ============= */
+    /* ========= добавить ============= */
 
     overflow-y: auto;
     padding-bottom: 80px;
-    
-  /* ========= добавить ============= */
+
+    /* ========= добавить ============= */
 
   }
 
@@ -1580,6 +1591,7 @@ h5 {
 .exit .hero__author--text {
   margin: 20px 0 40px;
 }
+
 /* ====================== добавить =================== */
 
 /*===================== ACCENT ==================== */
@@ -1669,6 +1681,7 @@ h5 {
     padding-right: 0;
   }
 }
+
 /* ====================== добавить =================== */
 
 
@@ -2080,10 +2093,12 @@ h5 {
   width: max-content;
   margin: 30px auto 0;
 }
-.wall-about-us{
+
+.wall-about-us {
   position: relative;
 }
-.wall-about-us .main-btn{
+
+.wall-about-us .main-btn {
   position: absolute;
   bottom: 240px;
   z-index: 9;
@@ -2097,12 +2112,14 @@ h5 {
   .swiper-pagination-fraction {
     bottom: 15px;
   }
+
   .wall-stage__wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 940px){
-  .wall-about-us .main-btn{
+
+@media (max-width: 940px) {
+  .wall-about-us .main-btn {
     position: relative;
     display: block;
     width: max-content;
@@ -2111,14 +2128,17 @@ h5 {
     bottom: 0;
   }
 }
-@media(max-width:976px), (orientation: portrait){
-  .wall-hero{
+
+@media(max-width:976px), (orientation: portrait) {
+  .wall-hero {
     padding-top: 114px;
   }
+
   .wall-hero.hero picture img {
     object-position: bottom;
+  }
 }
-}
+
 @media(max-width:814px), (orientation: portrait) {
   .wall-info__title {
     display: block;
@@ -2168,10 +2188,12 @@ h5 {
     max-width: 100%;
     margin-bottom: 15px;
   }
+
   .wall-stage__wrapper {
     display: block;
   }
-  .wall-stage__item{
+
+  .wall-stage__item {
     margin-bottom: 1px;
     height: auto;
   }
@@ -2192,69 +2214,262 @@ h5 {
 }
 
 /* ======================== ЛЕНДИНГ 3 ========================== */
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}
 
-.compass-hero .hero__wrapper .hero__subtitle{
+.compass-hero .hero__wrapper .hero__subtitle {
   max-width: 630px;
   width: 100%;
 }
-.compass-hero .hero__wrapper .main-btn{
+
+.compass-hero .hero__wrapper .main-btn {
   margin-top: 34px;
 }
-.compass-hero picture img{
+
+.compass-hero picture img {
   object-position: right;
 }
-.compass-info .wall-info__title{
+
+.compass-info .wall-info__title {
   display: grid;
   grid-template-columns: 40% auto;
   gap: 47px;
   margin-top: 0;
 }
-.compass-info .want__info--list ul{
+
+.compass-info .want__info--list ul {
   columns: 1;
 }
-.compass-info .want__info--list ul li{
+
+.compass-info .want__info--list ul li {
   margin-bottom: 5px;
   line-height: 130%;
 }
-.compass-info .t28{
+
+.compass-info .t28 {
   text-indent: 106px;
   line-height: 100%;
 }
-.compass-info .main-btn{
+
+.compass-info .main-btn {
   position: relative;
   left: 50%;
   margin-top: 28px;
 }
+
+.compass-format {
+  background: #F7EA5E;
+}
+
+.compass-format h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.compass-format__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+
+.compass-format .format__day {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.compass-format .format__day--num {
+  background-color: #F6F3A4;
+}
+
+.compass-format .format__day--text {
+  background-color: #fff;
+  height: 100%;
+  padding: 20px 30px 30px;
+}
+
+.compass-format .format__day--text h5 {
+  margin-bottom: 10px;
+}
+
+.compass-format .format__day .format__day--num,
+.compass-format .format__day .format__day--text {
+  width: 100%;
+}
+
 @media (orientation: portrait) {
-  .compass-hero{
+  .compass-hero {
     padding-top: 55px;
     padding-bottom: 85%;
   }
-  .compass-hero .hero__wrapper{
+
+  .compass-hero .hero__wrapper {
     margin-top: 50px;
   }
-  .compass-hero .hero__wrapper .main-btn{
+
+  .compass-hero .hero__wrapper .main-btn {
     margin-top: 34px;
   }
 
-}
-@media (max-width: 814px), (orientation: portrait) {
-  .compass-info .wall-info__title {
-      display: block;
+  .compass-format__wrapper {
+    display: block;
   }
-  .compass-info .t28{
+}
+
+@media (max-width: 814px),
+(orientation: portrait) {
+  .compass-info .wall-info__title {
+    display: block;
+  }
+
+  .compass-info .t28 {
     text-indent: 80px;
     margin-top: 40px;
   }
-  .compass-info .main-btn{
+
+  .compass-info .main-btn {
     left: 50%;
     transform: translateX(-50%);
   }
 }
+
 @media (max-width: 567px) {
   .compass-info .main-btn {
-      width: 100%;
-      text-align: center;
-      padding: 14px;
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+}
+
+/* ============================ Lending STAY ======================= */
+
+.stay-hero {
+  min-height: 120vh;
+}
+
+.stay-hero h1 {
+  margin-bottom: 31px;
+}
+
+.stay-hero img {
+  height: auto;
+  object-position: right bottom;
+}
+
+.stay-hero .hero__wrapper {
+  max-width: 60%;
+}
+
+.stay-hero .hero__wrapper--info {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.stay-hero .hero__wrapper--info h6 {
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.stay-hero .hero__wrapper--info .t28 {
+  margin-bottom: 10px;
+}
+
+.stay-hero .hero__wrapper--info .t16 {
+  margin-bottom: 20px;
+}
+
+.stay-hero .hero__wrapper--left {
+  width: clamp(15.63rem, calc(12.22rem + 17.05vw), 25rem);
+  flex: 0 0 auto;
+}
+
+.stay-hero .hero__wrapper--right {
+  width: 367px;
+  flex: 0 0 auto;
+}
+
+.stay-skills {
+  padding-top: 0;
+}
+.stay-skills__wrapper{
+  gap: 10%; 
+  display: flex;
+}
+.stay-skills__title {
+  position: relative;
+  padding-top: 50px;
+  max-width: 50%;
+  z-index: 1;
+}
+.stay-skills__title h2{
+  margin-bottom: 70px;
+  max-width: 510px;
+  margin-left: 120px;
+}
+.stay-skills__title h6{
+  margin-bottom: 20px;
+  margin-left: clamp(2.5rem, calc(0.98rem + 7.61vw), 6.69rem);
+}
+.stay-skills__title img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.stay-skills__list li{
+  padding: 20px 30px;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1px;
+}
+@media (orientation: portrait) {
+  .stay-hero {
+    padding-bottom: 120%;
+  }
+  .stay-skills__wrapper{
+    display: block;
+  }
+  .stay-skills__title {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .stay-hero .hero__wrapper--info {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .stay-hero .hero__wrapper {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .stay-hero .hero__wrapper--right {
+    width: 100%;
+  }
+  .stay-skills__title h2{
+    margin-bottom: 70px;
+    max-width: 510px;
+    margin-left: 0px;
+  }
+  .stay-skills__title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }.stay-skills__title img {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
