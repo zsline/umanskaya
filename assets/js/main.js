@@ -8,6 +8,7 @@ document.querySelector('.menu-btn').addEventListener('click', function(){
 if(document.querySelector('.cases__slider')){
     const swiper = new Swiper('.cases__slider', {
         loop: true,
+        autoHeight: true,
         pagination: {
             el: '.cases-pagination',
         },

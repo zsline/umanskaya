@@ -40,15 +40,38 @@
                 </div>
             </div>
         </header>
-        <main class="main site-main">
-            <div class="site-main__title" style="background-color: var(--blue-1);">
+        <main class="main main-home">
+            <div class="main-home__title" style="background-color: var(--blue-1);">
                 <div class="container"></div>
                 <h1>кто я?</h1>
             </div>
-            <div class="hero hero-sample" style="background-color: var(--blue-1);">
+            <div class="hero hero-sample hero-about" style="background-color: var(--blue-1);">
+                <style>
+                    .hero-sample__wrapper {
+                        background-image: url(assets/img/about-hero-sample.png);
+                    }
+
+                    .past {
+                        background-image: url(assets/img/past-bg.png);
+                    }
+
+                    @media (max-width: 426px) and (min-width: 320px),
+                    (orientation: portrait) {
+                        .hero-sample__wrapper {
+                            background-image: url(assets/img/about-hero-sample-mobile.png);
+                            background-size: 100% auto;
+                            background-position: bottom;
+                        }
+
+                        .past {
+                            background-image: url(assets/img/past-bg-mobile.png);
+                            background-size: 100% auto !important;
+                            background-position: bottom;
+                        }
+                    }
+                </style>
                 <div class="container">
-                    <div class="hero-sample__wrapper"
-                        style="background-image: url(assets/img/about-hero-sample.png); background-color: #93BAD7; background-blend-mode: screen">
+                    <div class="hero-sample__wrapper" style="background-color: #93BAD7; background-blend-mode: screen;">
                         <picture>
                             <source srcset="assets/img/about-hero-sample-persone.png" media="(orientation: portrait)">
                             <source srcset="assets/img/about-hero-sample-persone.png" media="(orientation: landscape)">
@@ -56,7 +79,11 @@
                         </picture>
                         <div class="hero-sample__offer">
                             <div class="hero-sample__main-title">Меня зовут<br>Наталья УМанская,<br>я –
-                                сертифицированный коуч.</div>
+                                сертифицированный коуч.
+                            </div>
+                            <div class="hero-sample__main-title--mobile">Меня зовут Наталья УМанская, я –
+                                сертифицированный коуч.
+                            </div>
                             <div class="hero-sample__title">
                                 <h1></h1>
                             </div>
@@ -115,54 +142,64 @@
                         работаю по шаблонам, ведь каждый человек уникален, требует персонального подхода</h4>
                 </div>
             </div>
-            <div class="past" style="background-image: url(assets/img/past-bg.png); background-color: #8C8C8C;" >
+            <div class="past" style="background-color: #C5C5C5;">
                 <div class="container">
-                    <div class="hero__cat">
-                        Но так было не всегда.
+                    <div class="past__wrapper">
+                        <div class="hero__cat">
+                            Но так было не всегда.
+                        </div>
+                        <p>20 лет назад я умывалась слезами, сидя в съемной квартире без работы, почти без немецкого,
+                            оставшись с двумя детьми после третьего (!) развода. Ситуация вынудила разбираться, как же
+                            все-таки делать правильный выбор и строить эти самые гармоничные отношения?</p>
+                        <div class="t16">
+                            Книги, тренинги, тренировки, практики, обучение. Мне удалось ответить на свои вопросы и
+                            реализовать призвание — сделать коучинг своей настоящей профессией.
+                        </div>
                     </div>
-                    <p>20 лет назад я умывалась слезами, сидя в съемной квартире без работы, почти без немецкого, оставшись с двумя детьми после третьего (!) развода. Ситуация вынудила разбираться, как же все-таки делать правильный выбор и строить эти самые гармоничные отношения?</p>
-                    <div class="t16">
-                        Книги, тренинги, тренировки, практики, обучение. Мне удалось ответить на свои вопросы и реализовать призвание — сделать коучинг своей настоящей профессией.
-                    </div>
+
                 </div>
             </div>
             <div class="skill" style="background-color: var(--pink); background-image: url(assets/img/skill.png);">
                 <div class="container">
                     <div class="skill__wrapper">
-                        <h2>мои 8+ лет<br> в коучинге это:</h2>
+                        <div class="skill__title">
+                            <h2>мои 8+ лет<br> в коучинге это:</h2>
+                        </div>
+                        <div class="skill__title--mobile">
+                            <h2>мои 8+ лет в коучинге это:</h2>
+                        </div>
                         <div class="skill__counts">
-                            <div class="skill__counts--wrapper">
-                                <div class="skill__counts--item">
-                                    <div class="skill__counts--title">
-                                        <div class="skill__counts--number">3000+</div>
-                                        <div class="skill__counts--text"></div>
+                            <div class="skill__counts--wrapper hero__counts--wrapper">
+                                <div class="skill__counts--item hero__counts--item">
+                                    <div class="skill__counts--title hero__counts--title">
+                                        <div class="skill__counts--number hero__counts--number">3000+</div>
                                     </div>
-                                    <div class="skill__counts--subtitle">
+                                    <div class="skill__counts--subtitle hero__counts--subtitle">
                                         часов личных сессий
                                     </div>
                                 </div>
-                                <div class="skill__counts--item">
-                                    <div class="skill__counts--title">
-                                        <div class="skill__counts--number">200+</div>
-                                        <div class="skill__counts--text"></div>
+                                <div class="skill__counts--item hero__counts--item">
+                                    <div class="skill__counts--title hero__counts--title">
+                                        <div class="skill__counts--number hero__counts--number">200+</div>
                                     </div>
-                                    <div class="skill__counts--subtitle">
+                                    <div class="skill__counts--subtitle hero__counts--subtitle">
                                         клиентов в долгосрочном коучинге
                                     </div>
                                 </div>
-                                <div class="skill__counts--item">
-                                    <div class="skill__counts--title">
-                                        <div class="skill__counts--number">1300+</div>
-                                        <div class="skill__counts--text"></div>
+                                <div class="skill__counts--item hero__counts--item">
+                                    <div class="skill__counts--title hero__counts--title">
+                                        <div class="skill__counts--number hero__counts--number">1300+</div>
                                     </div>
-                                    <div class="skill__counts--subtitle">
+                                    <div class="skill__counts--subtitle hero__counts--subtitle">
                                         часов ведения групп
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="t16">Я фанат своей работы и делаю ее с радостью и любовью.</div>
-                        <div class="t16">Мой принцип — целостный подход: задачи могут стоять на физическом, ментальном, эмоциональном и духовном уровнях. И только комплексная работа может дать долгосрочный, ощутимый результат.</div>
+                        <div class="t16">Мой принцип — целостный подход: задачи могут стоять на физическом, ментальном,
+                            эмоциональном и духовном уровнях. И только комплексная работа может дать долгосрочный,
+                            ощутимый результат.</div>
                         <div class="t16">На том стою. Мои кейсы и отзывы о работе — здесь.</div>
                         <div class="t16 signature">Ваша Уманская</div>
                     </div>
