@@ -2820,9 +2820,12 @@ h6 {
 
 .info-page__hero img {
   width: 100%;
-  aspect-ratio: 1 / 1.02;
   border-radius: 20px;
   object-fit: cover;
+}
+
+.info-page__hero .info-page__wrapper img {
+  aspect-ratio: 1 / 1.02;
 }
 
 .info-page__wrapper {
@@ -2875,9 +2878,66 @@ h6 {
   flex: 0 0 auto;
   margin-right: clamp(0rem, calc(-11.34rem + 23.86vw), 6.56rem);
 }
-.info-page__item .info__item ul{
+
+.info-page__item .info__item ul {
   margin-top: 0;
   margin-left: 10px;
+}
+
+.main-page__title {
+  padding: 128px 0 97px;
+  text-align: center;
+}
+
+.supervision h6 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.supervision__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.supervision__item--title {
+  font-family: 'Angst', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  height: 54px;
+  width: 80%;
+  margin: 0 auto 16px;
+}
+.supervision__item--img{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.12 / 1;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.supervision__item--format {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px 15px;
+  background-color: var(--white);
+  width: max-content;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.supervision__item--info {
+  text-align: center;
 }
 
 @media screen and (max-width: 897px) {
@@ -2907,6 +2967,14 @@ h6 {
     width: 100% !important;
   }
 
+  .info-page__title {
+    padding: 115px 0 60px;
+  }
+
+  .info-page__hero img {
+    aspect-ratio: 1 / 1.02;
+  }
+
   .info-page__item--full {
     display: block;
   }
@@ -2920,7 +2988,7 @@ h6 {
   }
 
   .info-page__wrapper {
-    display: block;
+    display: inline-block;
   }
 
   .info-page__item {
@@ -2937,12 +3005,15 @@ h6 {
     margin-left: 0;
     margin-right: 0;
   }
-  .main-btn.f-btn::after{
+
+  .main-btn.f-btn::after {
     display: none;
   }
-  .info-page__item--inner{
+
+  .info-page__item--inner {
     width: 100%;
   }
+
   .main-home .skill {
     padding-bottom: 120%;
   }
