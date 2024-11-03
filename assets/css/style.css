@@ -222,8 +222,9 @@ h6 {
   font-family: "NTSomic";
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120%;
+  /* 19.2px */
   text-transform: uppercase;
 }
 
@@ -969,6 +970,7 @@ h6 {
 
 .info__item ul {
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .info__item ul li {
@@ -1111,8 +1113,7 @@ h6 {
   width: 24px;
   height: 6px;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 7px;
 }
 
 .format__days {
@@ -2224,12 +2225,6 @@ h6 {
 }
 
 /* ======================== ЛЕНДИНГ 3 ========================== */
-h6 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19.2px;
-  text-transform: uppercase;
-}
 
 .compass-hero .hero__wrapper .hero__subtitle {
   max-width: 630px;
@@ -2959,7 +2954,7 @@ h6 {
   flex: 0 0 auto;
 }
 
-.want .main-btn {
+.want .main-btn, .format-page .main-btn {
   margin-top: 40px;
 }
 
@@ -2995,52 +2990,130 @@ h6 {
   margin-left: 10px;
   margin-top: 10px;
 }
-.coaching__wrapper--price{
+
+.coaching__wrapper--price {
   height: 238px;
   display: flex;
   align-items: stretch;
   max-width: 716px;
 }
-.coaching__wrapper--price-info{
+
+.coaching__wrapper--price-info {
   background-color: var(--yellow-3);
   padding: 20px 12px 20px 30px;
   border-radius: 20px;
 }
-.coaching__wrapper--price img{
+
+.coaching__wrapper--price img {
   border-radius: 20px;
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1.72 / 1;
 }
-.coaching__wrapper--price-info .t16{
+
+.coaching__wrapper--price-info .t16 {
   margin-bottom: 20px;
 }
-.coaching__wrapper .about-us__data{
+
+.coaching__wrapper .about-us__data {
   justify-content: end;
 }
-.coaching__wrapper .about-us__data--img{
+
+.coaching__wrapper .about-us__data--img {
   width: 60%;
 }
-.coaching__wrapper .about-us__data--list{
+
+.coaching__wrapper .about-us__data--list {
   width: 40%;
 }
-@media screen and (max-width: 1200px){
-  .coaching__wrapper{
+.format-page .hero__wrapper h2{
+  margin-bottom: 40px;
+}
+.format-page .hero__wrapper h6{
+  max-width: 442px;
+  margin-bottom: 30px;
+}
+.format-page .exit__list {
+  margin-top: 10px;
+}
+.format-page .stay__wrapper{
+  display: flex;
+  justify-content: start;
+  gap: clamp(2.5rem, calc(-25rem + 45.83vw), 9.38rem);
+}
+.format-page .stay__wrapper img{
+  display: block;
+}
+.format-page .stay__info{
+  margin-top: 76px;
+}
+.format-page .coaching h6, .format-page .coaching h4{
+  text-align: center;
+}
+.format-page .coaching h4{
+  max-width: 1086px;
+  margin: 40px auto 60px;
+}
+.format-page .coaching__wrapper--info-text{
+  margin-top: 14px;
+}
+.stay__info h3{
+  margin-bottom: 40px;
+}
+.stay__info .t20{
+  max-width: 564px;
+  margin: 20px 0;
+}
+.format-page .courses__wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.format-page .courses__item h3{
+  margin-bottom: 7px;
+}
+.format-page .courses__item .t20{
+  margin-top: 37px;
+  margin-bottom: 20px;
+}
+.format-page .courses__item img{
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1.81 / 1;
+  max-height: 337px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 42px;
+}
+.format-page .courses__item .main-btn{
+  margin-top: 30px;
+}
+.format-page .info__item ul{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .coaching__wrapper {
     display: block;
   }
-  .coaching__wrapper--info{
+
+  .coaching__wrapper--info {
     margin: 0 auto 20px;
   }
-  .coaching__wrapper--price{
+
+  .coaching__wrapper--price {
     max-width: 714px;
     margin: 30px auto 0;
   }
-  .coaching .main-btn, .mentoring .main-btn{
+
+  .coaching .main-btn,
+  .mentoring {
     display: block;
     width: max-content;
     margin: 50px auto 0;
   }
 }
+
 @media screen and (max-width: 897px) {
   .supervision__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -3098,14 +3171,31 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .coaching__wrapper--price{
+  .format-page .courses__item img{
+    aspect-ratio: 1 / 1.02;
+  }
+  .main-page__title{
+    padding-bottom: 60px;
+  }
+  .format-page .stay__wrapper{
+    flex-direction: column-reverse;
+  }
+  .format-page .stay__info{
+    margin-top: 50px;
+  }
+  .format-page .hero{
+    padding-top: 60px;
+  }
+  .coaching__wrapper--price {
     display: inline-flex;
     flex-direction: column-reverse;
     width: 100%;
   }
-  .coaching .main-btn{
+
+  .coaching .main-btn {
     width: auto;
   }
+
   .main-home .info-sample .info__item {
     width: 100% !important;
   }
@@ -3140,6 +3230,19 @@ h6 {
 }
 
 @media screen and (max-width: 640px) {
+  .format-page .courses__wrapper{
+    display: block;
+  }
+  .format-page .courses__item:first-child{
+    margin-bottom: 50px;
+  }
+  .format-page .courses__item .t20{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .format-page .courses__item .info__item{
+    margin-bottom: 10px;
+  }
   .supervision__wrapper {
     display: block;
   }
@@ -3150,14 +3253,19 @@ h6 {
   }
 
 }
-@media screen and (max-width: 584px){
-  .coaching__wrapper .about-us__data--img, .coaching__wrapper .about-us__data--list{
+
+@media screen and (max-width: 584px) {
+
+  .coaching__wrapper .about-us__data--img,
+  .coaching__wrapper .about-us__data--list {
     width: 100%;
   }
-  .coaching__wrapper .about-us__data{
+
+  .coaching__wrapper .about-us__data {
     flex-direction: column-reverse;
   }
 }
+
 @media (max-width: 426px) and (min-width: 320px),
 (orientation: portrait) {
   .f-btn {
